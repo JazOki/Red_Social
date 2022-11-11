@@ -18,7 +18,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{BD233B38-B079-3FE5-B5A0-497D512829F8}</ProjectGuid>
+    <ProjectGuid>{AF0FEEFF-BAC2-3109-8583-6D6FA03A73FD}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -85,11 +85,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\nenyc\OneDrive\Escritorio\Flutter Proyects\red_social_flutter\windows\runner\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\nenyc\OneDrive\Escritorio\Jazmin\Flutter Proyects\red_social_flutter\windows\runner\CMakeLists.txt">
       <StdOutEncoding>UTF-8</StdOutEncoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/nenyc/OneDrive/Escritorio/Flutter Proyects/red_social_flutter/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/nenyc/OneDrive/Escritorio/Flutter Proyects/red_social_flutter/windows" "-BC:/Users/nenyc/OneDrive/Escritorio/Flutter Proyects/red_social_flutter/build/windows" --check-stamp-file "C:/Users/nenyc/OneDrive/Escritorio/Flutter Proyects/red_social_flutter/build/windows/runner/CMakeFiles/generate.stamp"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/windows" "-BC:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows" --check-stamp-file "C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -98,11 +98,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\nenyc\OneDrive\Escritorio\Flutter Proyects\red_social_flutter\build\windows\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\nenyc\OneDrive\Escritorio\Jazmin\Flutter Proyects\red_social_flutter\build\windows\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/Users/nenyc/OneDrive/Escritorio/Flutter Proyects/red_social_flutter/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/nenyc/OneDrive/Escritorio/Flutter Proyects/red_social_flutter/windows" "-BC:/Users/nenyc/OneDrive/Escritorio/Flutter Proyects/red_social_flutter/build/windows" --check-stamp-file "C:/Users/nenyc/OneDrive/Escritorio/Flutter Proyects/red_social_flutter/build/windows/runner/CMakeFiles/generate.stamp"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/windows" "-BC:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows" --check-stamp-file "C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -111,11 +111,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\nenyc\OneDrive\Escritorio\Flutter Proyects\red_social_flutter\build\windows\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\nenyc\OneDrive\Escritorio\Jazmin\Flutter Proyects\red_social_flutter\build\windows\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/nenyc/OneDrive/Escritorio/Flutter Proyects/red_social_flutter/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/nenyc/OneDrive/Escritorio/Flutter Proyects/red_social_flutter/windows" "-BC:/Users/nenyc/OneDrive/Escritorio/Flutter Proyects/red_social_flutter/build/windows" --check-stamp-file "C:/Users/nenyc/OneDrive/Escritorio/Flutter Proyects/red_social_flutter/build/windows/runner/CMakeFiles/generate.stamp"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/windows" "-BC:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows" --check-stamp-file "C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -124,21 +124,21 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\nenyc\OneDrive\Escritorio\Flutter Proyects\red_social_flutter\build\windows\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\nenyc\OneDrive\Escritorio\Jazmin\Flutter Proyects\red_social_flutter\build\windows\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\nenyc\OneDrive\Escritorio\Flutter Proyects\red_social_flutter\build\windows\ZERO_CHECK.vcxproj">
-      <Project>{69155189-7065-3EED-834E-B22B12BE34A4}</Project>
+    <ProjectReference Include="C:\Users\nenyc\OneDrive\Escritorio\Jazmin\Flutter Proyects\red_social_flutter\build\windows\ZERO_CHECK.vcxproj">
+      <Project>{58947191-640E-38D5-A7CD-85AFE25742E3}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\nenyc\OneDrive\Escritorio\Flutter Proyects\red_social_flutter\build\windows\runner\red_social_flutter.vcxproj">
-      <Project>{6A243645-EF5B-3BB7-A1D5-BB7FB0DD21A1}</Project>
+    <ProjectReference Include="C:\Users\nenyc\OneDrive\Escritorio\Jazmin\Flutter Proyects\red_social_flutter\build\windows\runner\red_social_flutter.vcxproj">
+      <Project>{1EF8AC7C-6D93-376F-BC9C-EF654A9D407D}</Project>
       <Name>red_social_flutter</Name>
     </ProjectReference>
   </ItemGroup>

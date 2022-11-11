@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/nenyc/OneDrive/Escritorio/Flutter Proyects/red_social_flutter/windows/flutter
+# Install script for directory: C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/windows/flutter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

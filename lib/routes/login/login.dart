@@ -15,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
   final _emailController = TextEditingController(text: 'JazOki@gmail.com');
   final _passwordController = TextEditingController(text: '216555851');
 
-  @override
+  @override //se sobre escribe el método
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
@@ -65,6 +65,9 @@ class _LoginPageState extends State<LoginPage> {
                 hintText: 'ejemplo@dominio.com',
                 labelText: 'Correo electronico')),
       );
+      // TextField(
+      //   controller: _passwordController,
+      // );
     });
   }
 
@@ -82,6 +85,9 @@ class _LoginPageState extends State<LoginPage> {
                 hintText: 'contraseña',
                 labelText: 'Contraseña')),
       );
+      // TextField(
+      //   controller: _emailController,
+      // );
     });
   }
 
@@ -111,6 +117,7 @@ class _LoginPageState extends State<LoginPage> {
               // Navigator.pushNamed(context, feed.routeName);
             } catch (e) {
               // how to send a toast flutter
+              print(e.toString());
             }
           });
     });

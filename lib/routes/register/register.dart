@@ -13,6 +13,11 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        foregroundColor: Colors.black,
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -40,6 +45,11 @@ class _RegisterPageState extends State<RegisterPage> {
               height: 20.0,
             ),
             _bottonLogin(),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text('back'))
             // _createTextField(),
             // SizedBox(
             //   height: 15,
@@ -124,14 +134,4 @@ class _RegisterPageState extends State<RegisterPage> {
           onPressed: () {});
     });
   }
-
-  // Widget _createTextField() {
-  //   return Container(
-  //       padding: EdgeInsets.only(top: 24),
-  //       child: Text(
-  //         'Crear tu cuenta',
-  //         textAlign: TextAlign.left,
-  //         style: TextStyle(fontWeight: FontWeight.bold),
-  //       ));
-  // }
 }

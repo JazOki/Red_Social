@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:red_social_flutter/routes/login/login.dart';
 import 'package:red_social_flutter/routes/register/register.dart';
-// import 'package:red_social_flutter/register.dart';
+import 'package:red_social_flutter/routes/feed/feedPage.dart';
+import 'package:red_social_flutter/routes/feed/postPage.dart';
 
 void main() {
   runApp(const MyApp());
+  
 }
 
 class MyApp extends StatelessWidget {
@@ -19,10 +21,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: LoginPage.routeName,
+      initialRoute: FeedPage.routeName,
       routes: {
         LoginPage.routeName: (context) => LoginPage(),
         RegisterPage.routeName: (context) => RegisterPage(),
+        FeedPage.routeName: (context) => FeedPage(),
+        postPage.routeName: (context) => postPage(),
       }
     );
   }

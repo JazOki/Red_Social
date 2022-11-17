@@ -3,6 +3,7 @@ C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/bu
 C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
 C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
 C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/images/foto.jpg
 C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/images/Malware.png
 C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/images/MalwareM.png
 C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin

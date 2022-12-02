@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:red_social_flutter/routes/register/register_Controller.dart';
 
 class RegisterPage extends StatefulWidget {
   static String id = 'register';
@@ -9,6 +10,11 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
+  final _controller = RegisterController();
+  final _nameController = TextEditingController();
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -16,7 +22,7 @@ class _RegisterPageState extends State<RegisterPage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        foregroundColor: Colors.black,
+        foregroundColor: Colors.black, //color de la flecha back
       ),
       body: Center(
         child: Column(
@@ -45,15 +51,11 @@ class _RegisterPageState extends State<RegisterPage> {
               height: 20.0,
             ),
             _bottonLogin(),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: const Text('back'))
-            // _createTextField(),
-            // SizedBox(
-            //   height: 15,
-            // ),
+            // ElevatedButton(
+            //     onPressed: () {
+            //       Navigator.pop(context);
+            //     },
+            //     child: const Text('back'))
           ],
         ),
       ),
@@ -66,6 +68,7 @@ class _RegisterPageState extends State<RegisterPage> {
       return Container(
         padding: EdgeInsets.symmetric(horizontal: 35.0),
         child: TextField(
+          controller: _nameController,
           keyboardType: TextInputType.name,
           decoration: InputDecoration(
               icon: Icon(Icons.person_outline),
@@ -83,6 +86,7 @@ class _RegisterPageState extends State<RegisterPage> {
       return Container(
         padding: EdgeInsets.symmetric(horizontal: 35.0),
         child: TextField(
+          controller: _emailController,
           keyboardType: TextInputType.emailAddress,
           decoration: InputDecoration(
               icon: Icon(Icons.email),
@@ -100,6 +104,7 @@ class _RegisterPageState extends State<RegisterPage> {
       return Container(
         padding: EdgeInsets.symmetric(horizontal: 35.0),
         child: TextField(
+          controller: _passwordController,
           keyboardType: TextInputType.emailAddress,
           obscureText: true,
           decoration: InputDecoration(
@@ -131,7 +136,11 @@ class _RegisterPageState extends State<RegisterPage> {
           // ),
           // elevation: 10.0,
           // colors: Color.fromARGB(255, 14, 35, 113),
-          onPressed: () {});
+          onPressed: () async {
+            await _controller.register(_nameController.text,
+                _emailController.text, _passwordController.text);
+            Navigator.pop(context);
+          });
     });
   }
 }

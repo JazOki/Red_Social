@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:red_social_flutter/routes/login/login.dart';
+import 'package:red_social_flutter/routes/people/people_view.dart';
 import 'package:red_social_flutter/routes/register/register.dart';
 import 'package:red_social_flutter/routes/feed/feedPage.dart';
 
@@ -20,11 +21,12 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        initialRoute: FeedPage.routeName,
+        initialRoute: LoginPage.routeName,
         routes: {
           LoginPage.routeName: (context) => LoginPage(),
           RegisterPage.routeName: (context) => RegisterPage(),
           FeedPage.routeName: (context) => FeedPage(),
+          PeopleView.routeName: (context)=> const PeopleView(),
         });
   }
 }

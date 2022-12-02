@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:red_social_flutter/routes/feed/feedPage.dart';
 import 'package:red_social_flutter/routes/login/login_controller.dart';
 import 'package:red_social_flutter/routes/register/register.dart';
 
@@ -12,7 +13,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final _controller = LoginController();
-  final _emailController = TextEditingController(text: 'JazOki@gmail.com');
+  final _emailController = TextEditingController(text: 'JazOki@email.com');
   final _passwordController = TextEditingController(text: '216555851');
 
   @override //se sobre escribe el método
@@ -112,9 +113,10 @@ class _LoginPageState extends State<LoginPage> {
           // colors: Color.fromARGB(255, 14, 35, 113),
           onPressed: () async {
             try {
+  
               await _controller.singIn(
                   _emailController.text, _passwordController.text);
-              // Navigator.pushNamed(context, feed.routeName);
+              Navigator.pushNamed(context, FeedPage.routeName);
             } catch (e) {
               // how to send a toast flutter
               print(e.toString());

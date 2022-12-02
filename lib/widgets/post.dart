@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:red_social_flutter/models/session.dart';
 
 class Post extends StatefulWidget {
   const Post({super.key});
@@ -29,7 +30,7 @@ class _Post extends State<Post> {
                   Container(
                     margin: EdgeInsets.only(left: 10, top: 10),
                     child: Text(
-                      "Jazmin Castellanos",
+                      Session().user.name,
                       style:
                           TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                     ),

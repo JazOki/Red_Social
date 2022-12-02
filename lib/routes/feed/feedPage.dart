@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:red_social_flutter/routes/login/login.dart';
+import 'package:red_social_flutter/routes/people/friend_view.dart';
+import 'package:red_social_flutter/routes/people/people_view.dart';
 import 'package:red_social_flutter/widgets/form_new_post.dart';
 import 'package:red_social_flutter/widgets/post.dart';
 import 'package:red_social_flutter/widgets/stories.dart';
@@ -17,23 +20,28 @@ class _FeedPageState extends State<FeedPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
         elevation: 0,
+        // foregroundColor: Color.fromARGB(255, 255, 0, 0), 
         title: const Text(
           "Malware",
           style: TextStyle(
-              fontSize: 32, fontWeight: FontWeight.w700, color: Colors.blue),
+              fontSize: 25, 
+              fontWeight: FontWeight.w400, 
+              color: Color.fromARGB(255, 255, 255, 255)),
         ),
         actions: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.search,
-                    color: Colors.black87,
-                  )),
+              // IconButton(
+              //     onPressed: () {
+              //       Navigator.pushNamed(context, PeopleView.routeName);
+              //     },
+              //     icon: const Icon(
+              //       Icons.person_add,
+              //       color: Colors.black87,
+              //     )),
               Container(
                 padding: EdgeInsets.all(5),
                 margin: EdgeInsets.only(right: 10),
@@ -103,16 +111,25 @@ class _FeedPageState extends State<FeedPage> {
                           width: 100,
                           child: Row(
                             children: [
-                              Container(
-                                alignment: Alignment.center,
-                                width: 30,
-                                child: Icon(Icons.live_tv, color: Colors.red),
-                              ),
-                              Container(
-                                alignment: Alignment.center,
-                                width: 30,
-                                child: Text("Live"),
-                              )
+                              IconButton(
+                                  onPressed: () {
+                                    Navigator.pushNamed(
+                                        context, PeopleView.routeName);
+                                  },
+                                  icon: const Icon(
+                                    Icons.person_add,
+                                    color: Colors.black87,
+                                  )),
+                              // Container(
+                              //   alignment: Alignment.center,
+                              //   width: 30,
+                              //   child: Icon(Icons.live_tv, color: Colors.red),
+                              // ),
+                              // Container(
+                              //   alignment: Alignment.center,
+                              //   width: 30,
+                              //   child: Text("Live"),
+                              // )
                             ],
                           ),
                         ),
@@ -128,16 +145,15 @@ class _FeedPageState extends State<FeedPage> {
                           width: 100,
                           child: Row(
                             children: [
-                              Container(
-                                alignment: Alignment.center,
-                                width: 30,
-                                child: Icon(Icons.photo, color: Colors.green),
-                              ),
-                              Container(
-                                alignment: Alignment.center,
-                                width: 38,
-                                child: Text("Photo"),
-                              )
+                              IconButton(
+                                  onPressed: () {
+                                    Navigator.pushNamed(
+                                        context, FriendView.routeName);
+                                  },
+                                  icon: const Icon(
+                                    Icons.person,
+                                    color: Colors.black87,
+                                  )),
                             ],
                           ),
                         ),
@@ -153,17 +169,15 @@ class _FeedPageState extends State<FeedPage> {
                           width: 100,
                           child: Row(
                             children: [
-                              Container(
-                                alignment: Alignment.center,
-                                width: 30,
-                                child: Icon(Icons.camera_roll,
-                                    color: Colors.purpleAccent),
-                              ),
-                              Container(
-                                alignment: Alignment.center,
-                                width: 35,
-                                child: Text("room"),
-                              )
+                              IconButton(
+                                  onPressed: () {
+                                    Navigator.pushNamed(
+                                        context, LoginPage.routeName);
+                                  },
+                                  icon: const Icon(
+                                    Icons.exit_to_app,
+                                    color: Colors.black87,
+                                  ), ),
                             ],
                           ),
                         ),

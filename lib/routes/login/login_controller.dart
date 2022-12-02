@@ -11,6 +11,7 @@ class LoginController {
     var response = await http.post(url,
         headers: {"Content-Type": 'application/json'},
         body: jsonEncode({"email": email, "password": password}));
+    print(response.body);
     if (response.statusCode != 200) throw 'Error en usuario o contraseña';
     var jsonResponse = jsonDecode(response.body);
     var user = User(

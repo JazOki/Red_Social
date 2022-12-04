@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:red_social_flutter/routes/login/login.dart';
-import 'package:red_social_flutter/routes/people/friend_view.dart';
+import 'package:red_social_flutter/routes/friends/friend_view.dart';
 import 'package:red_social_flutter/routes/people/people_view.dart';
 import 'package:red_social_flutter/widgets/form_new_post.dart';
-import 'package:red_social_flutter/widgets/post.dart';
-import 'package:red_social_flutter/widgets/stories.dart';
-// import 'package:red_social_flutter/widgets/text_field_icon.dart';
+import 'package:red_social_flutter/routes/post/post_view.dart';
 
 class FeedPage extends StatefulWidget {
   static String id = 'feedPage';
@@ -16,18 +14,20 @@ class FeedPage extends StatefulWidget {
 }
 
 class _FeedPageState extends State<FeedPage> {
+  final _postController = PostView();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
         elevation: 0,
-        // foregroundColor: Color.fromARGB(255, 255, 0, 0), 
+        // foregroundColor: Color.fromARGB(255, 255, 0, 0),
         title: const Text(
           "Malware",
           style: TextStyle(
-              fontSize: 25, 
-              fontWeight: FontWeight.w400, 
+              fontSize: 25,
+              fontWeight: FontWeight.w400,
               color: Color.fromARGB(255, 255, 255, 255)),
         ),
         actions: [
@@ -74,11 +74,8 @@ class _FeedPageState extends State<FeedPage> {
         ListView(
           children: [
             FormNewPost(),
-            Stories(),
             ...[
-              Post(),
-              Post(),
-              Post(),
+              PostView(),
             ]
           ],
         ),
@@ -120,16 +117,11 @@ class _FeedPageState extends State<FeedPage> {
                                     Icons.person_add,
                                     color: Colors.black87,
                                   )),
-                              // Container(
-                              //   alignment: Alignment.center,
-                              //   width: 30,
-                              //   child: Icon(Icons.live_tv, color: Colors.red),
-                              // ),
-                              // Container(
-                              //   alignment: Alignment.center,
-                              //   width: 30,
-                              //   child: Text("Live"),
-                              // )
+                              Container(
+                                alignment: Alignment.center,
+                                width: 50,
+                                child: Text("Agregar"),
+                              )
                             ],
                           ),
                         ),
@@ -154,6 +146,11 @@ class _FeedPageState extends State<FeedPage> {
                                     Icons.person,
                                     color: Colors.black87,
                                   )),
+                              Container(
+                                alignment: Alignment.center,
+                                width: 55,
+                                child: Text("Solicitud"),
+                              )
                             ],
                           ),
                         ),
@@ -170,14 +167,20 @@ class _FeedPageState extends State<FeedPage> {
                           child: Row(
                             children: [
                               IconButton(
-                                  onPressed: () {
-                                    Navigator.pushNamed(
-                                        context, LoginPage.routeName);
-                                  },
-                                  icon: const Icon(
-                                    Icons.exit_to_app,
-                                    color: Colors.black87,
-                                  ), ),
+                                onPressed: () {
+                                  Navigator.pushNamed(
+                                      context, LoginPage.routeName);
+                                },
+                                icon: const Icon(
+                                  Icons.exit_to_app,
+                                  color: Colors.black87,
+                                ),
+                              ),
+                              Container(
+                                alignment: Alignment.center,
+                                width: 38,
+                                child: Text("Salir"),
+                              )
                             ],
                           ),
                         ),

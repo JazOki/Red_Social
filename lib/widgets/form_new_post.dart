@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:red_social_flutter/models/user.dart';
+import '../routes/post/post_controller.dart';
 
 class FormNewPost extends StatefulWidget {
+  static const routeName = '/posts';
   const FormNewPost({super.key});
 
   @override
@@ -8,6 +11,15 @@ class FormNewPost extends StatefulWidget {
 }
 
 class _FormNewPost extends State<FormNewPost> {
+  List<User> listPosts = [];
+  final _postController = PostController();
+  final _descripcionController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -21,10 +33,34 @@ class _FormNewPost extends State<FormNewPost> {
             children: [
               Container(
                 margin: const EdgeInsets.only(left: 10),
-                child: const CircleAvatar(),
+                child: Row(
+                  children: [
+                    IconButton(
+                      onPressed: () async {
+                        try {
+                          await _postController
+                              .postPosteos(_descripcionController.text);
+                          print(_postController
+                              .postPosteos(_descripcionController.text));
+                        } catch (e) {
+                          // how to send a toast flutter
+                          print(e.toString());
+                        }
+                      },
+                      icon: const Icon(
+                        Icons.post_add_rounded,
+                        color: Color.fromARGB(255, 0, 66, 120),
+                      ),
+                    ),
+                    Container(
+                      alignment: Alignment.center,
+                      width: 100,
+                    )
+                  ],
+                ),
               ),
               Container(
-                margin: const EdgeInsets.only(left: 15),
+                margin: const EdgeInsets.only(),
                 width: 250,
                 child: const TextField(
                   decoration: InputDecoration(

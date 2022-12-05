@@ -16,12 +16,16 @@ class FriendController {
 }
 
 class FriendRequestController {
-  static Future<List<User>> getFriendsR() async {
-    final url = Uri.http(GlobalConfig.API_URL, '/friends/requests');
-    final response = await http
-        .get(url, headers: {'Authorization': 'Bearer ${Session().token}'});
-    print(response.body);
-    final jsonRequestsFriends = jsonDecode(response.body) as List<dynamic>;
-    return jsonRequestsFriends.map((e) => User.fromJason(e)).toList();
+  Future<bool> postFriendsR(String id) async {
+    final url = Uri.http(GlobalConfig.API_URL, '/friends/${id}');
+    var response = await http.post(url, headers: {
+      "Content-Type": "aplication/json",
+      "Authorization": "Bearer ${Session().token}",
+    });
+    if (response.statusCode != 200) {
+      return false;
+    } else {
+      return true;
+    }
   }
 }

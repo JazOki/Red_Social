@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:red_social_flutter/models/user.dart';
 import '../routes/post/post_controller.dart';
@@ -13,6 +15,8 @@ class FormNewPost extends StatefulWidget {
 class _FormNewPost extends State<FormNewPost> {
   List<User> listPosts = [];
   final _postController = PostController();
+  final _id = TextEditingController();
+  final _name = TextEditingController();
   final _descripcionController = TextEditingController();
 
   @override
@@ -38,10 +42,10 @@ class _FormNewPost extends State<FormNewPost> {
                     IconButton(
                       onPressed: () async {
                         try {
-                          await _postController
-                              .postPosteos(_descripcionController.text);
-                          print(_postController
-                              .postPosteos(_descripcionController.text));
+                          // await _postController
+                          //     .postPosteos(user.id._descripcionController.text);
+                          // print(_postController
+                          //     .postPosteos(_descripcionController.text));
                         } catch (e) {
                           // how to send a toast flutter
                           print(e.toString());

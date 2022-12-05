@@ -7,6 +7,7 @@ C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/bu
 C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/images/Malware.png
 C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/images/MalwareM.png
 C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/NOTICES
 C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
 C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
 C:/Users/nenyc/OneDrive/Escritorio/Jazmin/Flutter Proyects/red_social_flutter/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag

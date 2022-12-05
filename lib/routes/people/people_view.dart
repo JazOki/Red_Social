@@ -69,6 +69,7 @@ class UserWidget extends StatelessWidget {
               onPressed: () async {
                 final _friendController = FriendController();
                 await _friendController.postFriends();
+                print(_friendController.postFriends());
                 // try {
                 //   await
                 // } catch (e) {

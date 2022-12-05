@@ -14,3 +14,14 @@ class PostController {
     return jsonPosts.map((e) => User.fromJason(e)).toList();
   }
 }
+
+// class PostObtenidosController {
+//   Future<List<User>> getPosteos(String descripcion) async {
+//     final url = Uri.http(GlobalConfig.API_URL, '/posts');
+//     final response =
+//         await http.post(url, headers: {'Authorization': 'Bearer ${Session().token}'}, body: descripcion);
+//     print(response.body);
+//     final jsonPostsO = jsonDecode(response.body) as List<dynamic>;
+//     return jsonPostsO.map((e) => User.fromJason(e)).toList();
+//   }
+// }
